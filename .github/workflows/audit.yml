@@ -1,0 +1,11 @@
+name: Platform Audit
+
+on:
+  workflow_dispatch:
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Heartbeat
+        run: echo "HEARTBEAT: platform audit pipeline is alive"
